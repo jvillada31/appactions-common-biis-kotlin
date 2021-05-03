@@ -17,9 +17,13 @@
 
 <actions>
     <action intentName="actions.intent.OPEN_APP_FEATURE">
-        <!-- TODO: Handle intent parameters -->
 
-        <!-- TODO: Handle action fulfillment -->
+        <parameter name="feature">
+            <entity-set-reference entitySetId="FeatureEntitySet" />
+        </parameter>
+
+        <fulfillment urlTemplate="{@url}"/>
+        <fulfillment urlTemplate="https://todo.androidappactions.com/all-tasks"/>
 
     </action>
 </actions>
